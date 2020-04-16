@@ -254,7 +254,12 @@
 <script src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.5.13/js/mdb.min.js"></script>
 <script>    // SideNav Button Initialization
     $(".button-collapse").sideNav();
+      $(document.body).bind("dragover", function(e) {
+        e.preventDefault();
+        return false;
     // SideNav Scrollbar Initialization
     var sideNavScrollbar = document.querySelector('.custom-scrollbar');
     Ps.initialize(sideNavScrollbar);
+   });
+          
 </script></body></html>
